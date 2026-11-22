@@ -19,7 +19,7 @@ The plotting script writes nine PDFs to `JQ21/figures/`. The table generator wri
 
 ## Figure numbering in the Information Sciences manuscript
 
-The four main figures use the files named `setting`, `gain_bound`, `primary_gain`, and `exact_entropy_confirmation` in order. Supplementary Figures S1–S5 use `exchange_paths`, `regime_controls`, `block_sizes`, `size_calibration`, and `kernel_timing`. The table generator emits study results in the original LaTeX layout. The journal manuscript and supplement use the same data with separate numbering.
+The four main figures use the files named `setting`, `gain_bound`, `primary_gain`, and `exact_entropy_confirmation` in order. Supplementary Figures S1–S5 use `exchange_paths`, `regime_controls`, `block_sizes`, `size_calibration`, and `kernel_timing`. The table generator produces the two six-row tables in the journal layout and the full selector comparisons used as Supplementary Tables S1 and S2.
 
 ## Repeat graph-level analyses
 

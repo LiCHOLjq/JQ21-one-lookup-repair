@@ -65,12 +65,12 @@ def indexed(rows):
 
 def primary_results(index, diagnostic):
     lines = [
-        r"\begin{table}[tbp]",
+        r"\begin{table*}[!t]",
         r"\centering",
         r"\caption{Exact recovery on aligned, uniformly formed six-row blocks under the original first-maximum action convention. Rates are percentages. Contrasts $\Delta_{\mathrm U}$ and $\Delta_{\mathrm E}$ are whole-block value minus uniform lookup and exact marginal entropy, respectively, in percentage points with paired 95\% intervals. Contrasts use unrounded per-block outcomes.}",
         r"\label{tab:primary-six}",
-        r"\footnotesize",
-        r"\setlength{\tabcolsep}{3pt}",
+        r"\ifdefined\JournalReviewCopy\fontsize{9}{11}\selectfont\else\footnotesize\fi",
+        r"\setlength{\tabcolsep}{2.8pt}",
         r"\begin{tabular}{@{}lrrrrrrrll@{}}",
         r"\toprule",
         tex_row("Graph", "Split", "$n$", "None", "Uniform", "Raw gap", "Entropy",
@@ -87,11 +87,11 @@ def primary_results(index, diagnostic):
                                  *[pct(item["rate"]) for item in row],
                                  *["$" + delta(item["delta_value"]) + "\\ " + interval(item) + "$"
                                    for item in (row[1], row[3])]))
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}", "", r"\begin{table}[tbp]",
+    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table*}", "", r"\begin{table*}[!t]",
               r"\centering",
               r"\caption{Six-row selection gains, headroom, and fitted posterior concentration on aligned uniform blocks. The two ratios compare the gain of whole-block value over no lookup with the corresponding gain from a uniform lookup, under the fitted posterior or against the source mapping. $H$ is the hindsight ceiling under the common decoder. The headroom column reports the fraction $(A_{\rm value}-A_{\rm unif})/(H-A_{\rm unif})$ as a percentage. The final column is the mean posterior mass of a MAP permutation and all permutations one transposition away from it.}",
               r"\label{tab:six-posterior}",
-              r"\small",
+              r"\ifdefined\JournalReviewCopy\footnotesize\else\small\fi",
               r"\setlength{\tabcolsep}{5pt}",
               r"\begin{tabular}{@{}lrrrrrr@{}}",
               r"\toprule",
@@ -105,7 +105,7 @@ def primary_results(index, diagnostic):
                                  f"{float(item['realised_gain_ratio']):.3f}",
                                  pct(item["hindsight"]), pct(item["hindsight_fraction"]),
                                  pct(item["mean_within_one_swap"])))
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
+    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table*}"]
     return lines
 
 
