@@ -1,0 +1,45 @@
+{
+  "archive_paths": [
+    "experiments/results/scale_real.csv",
+    "experiments/transfer_results/scale_real.csv"
+  ],
+  "matched_archive_indices": 2995,
+  "compared_policies": [
+    "no_lookup",
+    "random",
+    "oracle",
+    "value",
+    "sinkhorn_entropy",
+    "forced_gap"
+  ],
+  "blocks_with_a_difference": 1,
+  "exceptions": [
+    {
+      "dataset": "ogbn_arxiv_20k",
+      "size": 12,
+      "block": 182,
+      "changed": {
+        "random": {
+          "archive": 0.0,
+          "replay": 0.08333333333333333
+        },
+        "oracle": {
+          "archive": 0.0,
+          "replay": 1.0
+        },
+        "sinkhorn_entropy": {
+          "archive": 0.0,
+          "replay": 1.0
+        }
+      },
+      "sinkhorn_row_zero_based": 8,
+      "completion_ties": 2,
+      "truth_gap_to_best": 0.0,
+      "score_tie_tolerance": 1e-12,
+      "independent_marginal_max_abs_discrepancy": 5.995204332975845e-15
+    }
+  ],
+  "numpy": "2.4.0",
+  "scipy": "1.17.1",
+  "note": "Independent log-space max/count DP confirms the recovered assignment ties another constrained optimum on the discordant block. Outcomes with a deterministic assignment decoder can vary across numerical environments."
+}

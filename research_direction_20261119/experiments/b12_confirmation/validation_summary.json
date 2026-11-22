@@ -1,0 +1,15 @@
+{
+  "oracle_cases": 112,
+  "max_oracle_marginal_error": 8.01581023779363e-14,
+  "max_oracle_logz_error": 5.684341886080802e-14,
+  "oracle_counts_all_equal": true,
+  "max_test_marginal_normalization_error": 8.659739592076221e-14,
+  "max_reported_vs_raw_policy_success_error": 1.1102230246251565e-16,
+  "test_blocks_disjoint_within_graph_seed": true,
+  "anchors_and_calibration_disjoint_from_test_blocks": true,
+  "raw_outcome_monotonicity_passed": true,
+  "kernel_validation_cases": 800,
+  "kernel_marginal_error": 5.551115123125783e-15,
+  "kernel_action_distributions_match": true,
+  "max_forced_score_error": 3.1086244689504383e-15
+}

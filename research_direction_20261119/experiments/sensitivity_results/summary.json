@@ -1,0 +1,92 @@
+{
+  "correctness": {
+    "seed": 73319,
+    "correctness_cases": 140,
+    "max_loss_error": 3.219646771412954e-15,
+    "max_utility_error": 1.1102230246251565e-13,
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "python": "3.12.3",
+    "system": "Linux",
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "source_sha256": "b3ae9c22d9ead26da64f028b438d2798c42a13ae1ab13330851e960829ac0d1b",
+    "estimand": "sum_j exp(-(MAP score - best score forced to row i,column j)/T)",
+    "temperature": 0.2,
+    "note": "Approximate methods are labeled; their errors and action regret are reported. No I/O or score construction included in kernel timings."
+  },
+  "timing_aggregate_across_four_score_families": [
+    {
+      "n": 4,
+      "median_seconds": {
+        "exchange_exact": 1.2523930000156724e-05,
+        "forced_hungarian_exact": 7.2431789999996e-05,
+        "pair_swap_approx": 6.7179100000203105e-06,
+        "row_top_two_gap_policy": 1.8876850003834988e-06,
+        "top_two_assignment_approx": 1.1051310000311787e-05
+      }
+    },
+    {
+      "n": 8,
+      "median_seconds": {
+        "exchange_exact": 1.7920295000521947e-05,
+        "forced_hungarian_exact": 0.000270081039215036,
+        "pair_swap_approx": 7.1672249998755436e-06,
+        "row_top_two_gap_policy": 2.029029999448539e-06,
+        "top_two_assignment_approx": 2.147516999968957e-05
+      }
+    },
+    {
+      "n": 16,
+      "median_seconds": {
+        "exchange_exact": 3.380642000024636e-05,
+        "forced_hungarian_exact": 0.0014400188833355464,
+        "pair_swap_approx": 9.347999999818057e-06,
+        "row_top_two_gap_policy": 2.3998800003255384e-06,
+        "top_two_assignment_approx": 6.233658999974523e-05
+      }
+    },
+    {
+      "n": 32,
+      "median_seconds": {
+        "exchange_exact": 8.120845000007648e-05,
+        "forced_hungarian_exact": 0.013450159499996062,
+        "pair_swap_approx": 1.6440649999935886e-05,
+        "row_top_two_gap_policy": 3.6706349999349186e-06,
+        "top_two_assignment_approx": 0.000298705322735315
+      }
+    },
+    {
+      "n": 64,
+      "median_seconds": {
+        "exchange_exact": 0.00037622041666591285,
+        "forced_hungarian_exact": 0.18558034950001456,
+        "pair_swap_approx": 5.389286500019352e-05,
+        "row_top_two_gap_policy": 8.313039999734427e-06,
+        "top_two_assignment_approx": 0.0028082418181811317
+      }
+    },
+    {
+      "n": 128,
+      "median_seconds": {
+        "exchange_exact": 0.0023924855833286074,
+        "forced_hungarian_exact": 2.864429052000048,
+        "pair_swap_approx": 0.0002461977922620019,
+        "row_top_two_gap_policy": 2.6003159999845592e-05,
+        "top_two_assignment_approx": 0.022244174500031022
+      }
+    },
+    {
+      "n": 256,
+      "median_seconds": {
+        "exchange_exact": 0.018384666500026015,
+        "pair_swap_approx": 0.0013127370864671,
+        "row_top_two_gap_policy": 0.00010741208500007815,
+        "top_two_assignment_approx": 0.23622704999996813
+      }
+    }
+  ]
+}

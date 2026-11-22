@@ -1,0 +1,19 @@
+{
+  "seed": 73319,
+  "correctness_cases": 140,
+  "max_loss_error": 3.219646771412954e-15,
+  "max_utility_error": 1.1102230246251565e-13,
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "python": "3.12.3",
+  "system": "Linux",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "source_sha256": "b3ae9c22d9ead26da64f028b438d2798c42a13ae1ab13330851e960829ac0d1b",
+  "estimand": "sum_j exp(-(MAP score - best score forced to row i,column j)/T)",
+  "temperature": 0.2,
+  "note": "Approximate methods are labeled; their errors and action regret are reported. No I/O or score construction included in kernel timings."
+}

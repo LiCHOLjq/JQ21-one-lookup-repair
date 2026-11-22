@@ -1,0 +1,23 @@
+[
+  {
+    "method": "pair_swap_approx",
+    "cases": 28,
+    "optimal_decisions": 13,
+    "max_relative_action_regret": 0.5061720447682689,
+    "mean_relative_action_regret": 0.09965780438611076
+  },
+  {
+    "method": "top_two_assignment_approx",
+    "cases": 28,
+    "optimal_decisions": 10,
+    "max_relative_action_regret": 0.5425132702088434,
+    "mean_relative_action_regret": 0.1493059196510764
+  },
+  {
+    "method": "row_top_two_gap_policy",
+    "cases": 28,
+    "optimal_decisions": 8,
+    "max_relative_action_regret": 0.9929712141428368,
+    "mean_relative_action_regret": 0.27692010505780934
+  }
+]

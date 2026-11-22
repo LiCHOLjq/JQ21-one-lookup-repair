@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.so
+*.dll
+*.obj
+*.exp
+*.lib
+.venv/
+JQ21/figures/
+JQ21/six_summary_tables.tex
+JQ21/policy_comparisons.tex
+research_discovery_20261115/data/cora.npz
+research_direction_20261119/experiments/public_data/amazon_original.npz

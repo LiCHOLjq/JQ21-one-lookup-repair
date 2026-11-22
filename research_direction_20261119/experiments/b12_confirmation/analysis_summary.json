@@ -1,0 +1,394 @@
+{
+  "runs": [
+    {
+      "dataset": "cora",
+      "seed": 119003,
+      "blocks": 67,
+      "temperature": 0.09200764482659865,
+      "calibration_method": "ridge_1.0",
+      "means": {
+        "value": 0.024875621890547265,
+        "exact_entropy": 0.03980099502487562,
+        "sinkhorn_entropy": 0.05472636815920398,
+        "random": 0.027155887230514094,
+        "forced_gap": 0.02860696517412935,
+        "no_lookup": 0.014925373134328358
+      },
+      "comparisons": {
+        "value minus exact_entropy": {
+          "difference": -0.014925373134328358,
+          "ci_low": -0.04477611940298507,
+          "ci_high": 0.0
+        },
+        "value minus sinkhorn_entropy": {
+          "difference": -0.029850746268656716,
+          "ci_low": -0.07462686567164178,
+          "ci_high": 0.0
+        },
+        "exact_entropy minus sinkhorn_entropy": {
+          "difference": -0.014925373134328358,
+          "ci_low": -0.04477611940298507,
+          "ci_high": 0.0
+        },
+        "value minus random": {
+          "difference": -0.0022802653399668312,
+          "ci_low": -0.01513266998341625,
+          "ci_high": 0.014718076285240467
+        },
+        "value minus forced_gap": {
+          "difference": -0.0037313432835820895,
+          "ci_low": -0.011194029850746268,
+          "ci_high": 0.0
+        }
+      },
+      "sinkhorn_max_residual": 9.269018885760261e-11,
+      "sinkhorn_above_1e_10": 0,
+      "sinkhorn_above_1e_8": 0,
+      "decoder_tied_blocks": 40,
+      "max_decoder_ties": 24,
+      "mean_marginal_absolute_error": 0.02387584637991722
+    },
+    {
+      "dataset": "cora",
+      "seed": 119004,
+      "blocks": 67,
+      "temperature": 0.09200764482659865,
+      "calibration_method": "ridge_0.1",
+      "means": {
+        "value": 0.06218905472636816,
+        "exact_entropy": 0.0845771144278607,
+        "sinkhorn_entropy": 0.12189054726368159,
+        "random": 0.05472636815920398,
+        "forced_gap": 0.09950248756218906,
+        "no_lookup": 0.030472636815920398
+      },
+      "comparisons": {
+        "value minus exact_entropy": {
+          "difference": -0.022388059701492536,
+          "ci_low": -0.07462686567164178,
+          "ci_high": 0.014925373134328358
+        },
+        "value minus sinkhorn_entropy": {
+          "difference": -0.05970149253731343,
+          "ci_low": -0.11940298507462686,
+          "ci_high": -0.014925373134328358
+        },
+        "exact_entropy minus sinkhorn_entropy": {
+          "difference": -0.03731343283582089,
+          "ci_low": -0.08955223880597014,
+          "ci_high": 0.0
+        },
+        "value minus random": {
+          "difference": 0.007462686567164181,
+          "ci_low": -0.018656716417910446,
+          "ci_high": 0.03917910447761195
+        },
+        "value minus forced_gap": {
+          "difference": -0.03731343283582089,
+          "ci_low": -0.08955223880597014,
+          "ci_high": 0.0
+        }
+      },
+      "sinkhorn_max_residual": 9.685163782080508e-11,
+      "sinkhorn_above_1e_10": 0,
+      "sinkhorn_above_1e_8": 0,
+      "decoder_tied_blocks": 38,
+      "max_decoder_ties": 120,
+      "mean_marginal_absolute_error": 0.023156236748912516
+    },
+    {
+      "dataset": "ogbn_arxiv_20k",
+      "seed": 119003,
+      "blocks": 220,
+      "temperature": 0.09200764482659865,
+      "calibration_method": "ridge_0.1",
+      "means": {
+        "value": 0.24545454545454545,
+        "exact_entropy": 0.2545454545454545,
+        "sinkhorn_entropy": 0.22727272727272727,
+        "random": 0.14469696969696969,
+        "forced_gap": 0.20606060606060606,
+        "no_lookup": 0.10075757575757575
+      },
+      "comparisons": {
+        "value minus exact_entropy": {
+          "difference": -0.00909090909090909,
+          "ci_low": -0.045454545454545456,
+          "ci_high": 0.025
+        },
+        "value minus sinkhorn_entropy": {
+          "difference": 0.01818181818181818,
+          "ci_low": -0.022727272727272728,
+          "ci_high": 0.056818181818181816
+        },
+        "exact_entropy minus sinkhorn_entropy": {
+          "difference": 0.02727272727272727,
+          "ci_low": 0.0,
+          "ci_high": 0.05454545454545454
+        },
+        "value minus random": {
+          "difference": 0.10075757575757578,
+          "ci_low": 0.06155303030303029,
+          "ci_high": 0.1429924242424243
+        },
+        "value minus forced_gap": {
+          "difference": 0.0393939393939394,
+          "ci_low": 0.008333333333333331,
+          "ci_high": 0.0715909090909091
+        }
+      },
+      "sinkhorn_max_residual": 9.7812979937828e-11,
+      "sinkhorn_above_1e_10": 0,
+      "sinkhorn_above_1e_8": 0,
+      "decoder_tied_blocks": 23,
+      "max_decoder_ties": 6,
+      "mean_marginal_absolute_error": 0.02749906037518958
+    },
+    {
+      "dataset": "ogbn_arxiv_20k",
+      "seed": 119004,
+      "blocks": 220,
+      "temperature": 0.09200764482659865,
+      "calibration_method": "ridge_0.1",
+      "means": {
+        "value": 0.2159090909090909,
+        "exact_entropy": 0.21136363636363636,
+        "sinkhorn_entropy": 0.18863636363636363,
+        "random": 0.13358585858585859,
+        "forced_gap": 0.19166666666666668,
+        "no_lookup": 0.09545454545454546
+      },
+      "comparisons": {
+        "value minus exact_entropy": {
+          "difference": 0.004545454545454545,
+          "ci_low": -0.02727272727272727,
+          "ci_high": 0.03636363636363636
+        },
+        "value minus sinkhorn_entropy": {
+          "difference": 0.02727272727272727,
+          "ci_low": -0.00909090909090909,
+          "ci_high": 0.06363636363636363
+        },
+        "exact_entropy minus sinkhorn_entropy": {
+          "difference": 0.022727272727272728,
+          "ci_low": 0.004545454545454545,
+          "ci_high": 0.045454545454545456
+        },
+        "value minus random": {
+          "difference": 0.08232323232323233,
+          "ci_low": 0.04639993686868684,
+          "ci_high": 0.12089804292929289
+        },
+        "value minus forced_gap": {
+          "difference": 0.024242424242424246,
+          "ci_low": -0.004545454545454544,
+          "ci_high": 0.0553030303030303
+        }
+      },
+      "sinkhorn_max_residual": 9.762546326896882e-11,
+      "sinkhorn_above_1e_10": 0,
+      "sinkhorn_above_1e_8": 0,
+      "decoder_tied_blocks": 19,
+      "max_decoder_ties": 6,
+      "mean_marginal_absolute_error": 0.027447881752354644
+    },
+    {
+      "dataset": "openalex_20k",
+      "seed": 119003,
+      "blocks": 220,
+      "temperature": 0.045788569702133276,
+      "calibration_method": "centroid",
+      "means": {
+        "value": 0.9363636363636364,
+        "exact_entropy": 0.9363636363636364,
+        "sinkhorn_entropy": 0.9272727272727272,
+        "random": 0.843560606060606,
+        "forced_gap": 0.925,
+        "no_lookup": 0.8181818181818182
+      },
+      "comparisons": {
+        "value minus exact_entropy": {
+          "difference": 0.0,
+          "ci_low": -0.013636363636363636,
+          "ci_high": 0.013636363636363636
+        },
+        "value minus sinkhorn_entropy": {
+          "difference": 0.00909090909090909,
+          "ci_low": -0.013636363636363636,
+          "ci_high": 0.03636363636363636
+        },
+        "exact_entropy minus sinkhorn_entropy": {
+          "difference": 0.00909090909090909,
+          "ci_low": -0.013636363636363636,
+          "ci_high": 0.03636363636363636
+        },
+        "value minus random": {
+          "difference": 0.0928030303030303,
+          "ci_low": 0.05909090909090909,
+          "ci_high": 0.1295454545454545
+        },
+        "value minus forced_gap": {
+          "difference": 0.011363636363636364,
+          "ci_low": 0.0022727272727272726,
+          "ci_high": 0.025
+        }
+      },
+      "sinkhorn_max_residual": 8.543560200702238e-05,
+      "sinkhorn_above_1e_10": 139,
+      "sinkhorn_above_1e_8": 128,
+      "decoder_tied_blocks": 1,
+      "max_decoder_ties": 2,
+      "mean_marginal_absolute_error": 0.008426664231962842
+    },
+    {
+      "dataset": "openalex_20k",
+      "seed": 119004,
+      "blocks": 220,
+      "temperature": 0.045788569702133276,
+      "calibration_method": "centroid",
+      "means": {
+        "value": 0.9318181818181818,
+        "exact_entropy": 0.9454545454545454,
+        "sinkhorn_entropy": 0.95,
+        "random": 0.8507575757575757,
+        "forced_gap": 0.925,
+        "no_lookup": 0.8272727272727273
+      },
+      "comparisons": {
+        "value minus exact_entropy": {
+          "difference": -0.013636363636363636,
+          "ci_low": -0.031818181818181815,
+          "ci_high": 0.0
+        },
+        "value minus sinkhorn_entropy": {
+          "difference": -0.01818181818181818,
+          "ci_low": -0.04090909090909091,
+          "ci_high": 0.004545454545454545
+        },
+        "exact_entropy minus sinkhorn_entropy": {
+          "difference": -0.004545454545454545,
+          "ci_low": -0.022727272727272728,
+          "ci_high": 0.00909090909090909
+        },
+        "value minus random": {
+          "difference": 0.08106060606060607,
+          "ci_low": 0.04810606060606061,
+          "ci_high": 0.115530303030303
+        },
+        "value minus forced_gap": {
+          "difference": 0.00681818181818182,
+          "ci_low": -0.00909090909090909,
+          "ci_high": 0.024242424242424246
+        }
+      },
+      "sinkhorn_max_residual": 9.723393620220122e-05,
+      "sinkhorn_above_1e_10": 137,
+      "sinkhorn_above_1e_8": 123,
+      "decoder_tied_blocks": 0,
+      "max_decoder_ties": 1,
+      "mean_marginal_absolute_error": 0.009149609810636734
+    },
+    {
+      "dataset": "amazon_computers",
+      "seed": 119003,
+      "blocks": 220,
+      "temperature": 0.0649068444639842,
+      "calibration_method": "ridge_0.1",
+      "means": {
+        "value": 0.3431818181818182,
+        "exact_entropy": 0.31136363636363634,
+        "sinkhorn_entropy": 0.29545454545454547,
+        "random": 0.22765151515151516,
+        "forced_gap": 0.2952272727272727,
+        "no_lookup": 0.18409090909090908
+      },
+      "comparisons": {
+        "value minus exact_entropy": {
+          "difference": 0.031818181818181815,
+          "ci_low": -0.004545454545454545,
+          "ci_high": 0.07045454545454545
+        },
+        "value minus sinkhorn_entropy": {
+          "difference": 0.04772727272727273,
+          "ci_low": 0.006818181818181818,
+          "ci_high": 0.08863636363636364
+        },
+        "exact_entropy minus sinkhorn_entropy": {
+          "difference": 0.015909090909090907,
+          "ci_low": -0.011363636363636364,
+          "ci_high": 0.04318181818181818
+        },
+        "value minus random": {
+          "difference": 0.11553030303030302,
+          "ci_low": 0.07499999999999998,
+          "ci_high": 0.15776515151515155
+        },
+        "value minus forced_gap": {
+          "difference": 0.04795454545454546,
+          "ci_low": 0.015982954545454557,
+          "ci_high": 0.08204734848484847
+        }
+      },
+      "sinkhorn_max_residual": 9.697931346863697e-11,
+      "sinkhorn_above_1e_10": 0,
+      "sinkhorn_above_1e_8": 0,
+      "decoder_tied_blocks": 13,
+      "max_decoder_ties": 2,
+      "mean_marginal_absolute_error": 0.028682187765606826
+    },
+    {
+      "dataset": "amazon_computers",
+      "seed": 119004,
+      "blocks": 220,
+      "temperature": 0.0649068444639842,
+      "calibration_method": "ridge_0.1",
+      "means": {
+        "value": 0.33636363636363636,
+        "exact_entropy": 0.2863636363636364,
+        "sinkhorn_entropy": 0.225,
+        "random": 0.20827020202020202,
+        "forced_gap": 0.31022727272727274,
+        "no_lookup": 0.15227272727272728
+      },
+      "comparisons": {
+        "value minus exact_entropy": {
+          "difference": 0.05,
+          "ci_low": 0.004545454545454545,
+          "ci_high": 0.09545454545454546
+        },
+        "value minus sinkhorn_entropy": {
+          "difference": 0.11136363636363636,
+          "ci_low": 0.06136363636363636,
+          "ci_high": 0.16363636363636364
+        },
+        "exact_entropy minus sinkhorn_entropy": {
+          "difference": 0.06136363636363636,
+          "ci_low": 0.029545454545454545,
+          "ci_high": 0.09545454545454546
+        },
+        "value minus random": {
+          "difference": 0.12809343434343434,
+          "ci_low": 0.08415404040404041,
+          "ci_high": 0.17411616161616167
+        },
+        "value minus forced_gap": {
+          "difference": 0.026136363636363635,
+          "ci_low": -0.012121212121212118,
+          "ci_high": 0.06439393939393938
+        }
+      },
+      "sinkhorn_max_residual": 9.749800966574185e-11,
+      "sinkhorn_above_1e_10": 0,
+      "sinkhorn_above_1e_8": 0,
+      "decoder_tied_blocks": 14,
+      "max_decoder_ties": 6,
+      "mean_marginal_absolute_error": 0.02906336710098894
+    }
+  ],
+  "seconds": 29.29492869799992,
+  "source_results_sha256": {
+    "blocks.csv": "7fc44665d15ed6776f5bc6a23439d9db2d3e2bf45fbc7410d59357e2f1b70657",
+    "paired_summary.csv": "68c509a916c3b3afdca3ae57211208e43923939cca0a43a17a51af8086da8e06",
+    "run.json": "585d740ca6f959704d683739647e07f339148bf112aa97c4d050fcd1d38c9ee3"
+  }
+}

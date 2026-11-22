@@ -1,0 +1,8 @@
+{
+  "seed": 773319,
+  "cases": 427,
+  "minimum_slack": -5.551115123125783e-17,
+  "star_equalities": 7,
+  "source_sha256": "4589f63669acacfcbe74f3460d2cf0b9a54c26328bef1e995f9e98b93d31e7d3",
+  "note": "Arbitrary finite permutation posterior checks supplement, not replace, the algebraic proof."
+}

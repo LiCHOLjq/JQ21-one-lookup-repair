@@ -1,0 +1,135 @@
+{
+  "dataset": "openalex_20k",
+  "prepared_utc": "2026-11-15T05:12:20.468978+00:00",
+  "n": 20000,
+  "dim": 768,
+  "edge_rows": 416286,
+  "source_metadata": {
+    "clusters": {
+      "count": 26,
+      "map": {
+        "11": 11,
+        "12": 12,
+        "13": 13,
+        "14": 14,
+        "15": 15,
+        "16": 16,
+        "17": 17,
+        "18": 18,
+        "19": 19,
+        "20": 20,
+        "21": 21,
+        "22": 22,
+        "23": 23,
+        "24": 24,
+        "25": 25,
+        "26": 26,
+        "27": 27,
+        "28": 28,
+        "29": 29,
+        "30": 30,
+        "31": 31,
+        "32": 32,
+        "33": 33,
+        "34": 34,
+        "35": 35,
+        "36": 36
+      }
+    },
+    "dim": 768,
+    "edges": {
+      "by_relation": {
+        "cites": 209628,
+        "same_author": 684216,
+        "same_field": 785160,
+        "same_venue": 813538,
+        "same_year": 646362
+      },
+      "total": 3138904
+    },
+    "group_edges": {
+      "same_author": {
+        "edges_emitted": 1680644,
+        "groups_skipped_large": 1,
+        "groups_used": 98212
+      },
+      "same_field": {
+        "edges_emitted": 905372,
+        "groups_skipped_large": 25,
+        "groups_used": 7449
+      },
+      "same_venue": {
+        "edges_emitted": 877672,
+        "groups_skipped_large": 7,
+        "groups_used": 4104
+      }
+    },
+    "labels": {
+      "count": 26,
+      "map": {
+        "11": 11,
+        "12": 12,
+        "13": 13,
+        "14": 14,
+        "15": 15,
+        "16": 16,
+        "17": 17,
+        "18": 18,
+        "19": 19,
+        "20": 20,
+        "21": 21,
+        "22": 22,
+        "23": 23,
+        "24": 24,
+        "25": 25,
+        "26": 26,
+        "27": 27,
+        "28": 28,
+        "29": 29,
+        "30": 30,
+        "31": 31,
+        "32": 32,
+        "33": 33,
+        "34": 34,
+        "35": 35,
+        "36": 36
+      }
+    },
+    "vertices": 80797
+  },
+  "embedding_metadata": {
+    "api_url": "https://api.openalex.org/works",
+    "embedding": {
+      "dim": 768,
+      "kind": "sentence_transformer",
+      "model": "BAAI/bge-base-en-v1.5",
+      "normalized": true,
+      "text": "title + abstract_inverted_index + OpenAlex field/topic names + venue"
+    },
+    "filter": "has_abstract:true,type:article,from_publication_date:2010-01-01",
+    "limit": 100000,
+    "relations": [
+      "cites",
+      "same_author",
+      "same_field",
+      "same_venue",
+      "same_year"
+    ],
+    "search": "database systems",
+    "sort": "cited_by_count:desc",
+    "source": "OpenAlex Works API",
+    "works": 80797
+  },
+  "selection": "BFS induced 20000 nodes; up to 3 seed nodes per label; RNG20261116",
+  "graph_semantics": "Cached union of cites/same_author/same_field/same_venue/same_year relations, symmetrized. NOT pure directed citations.",
+  "embedding": "Cached BAAI/bge-base-en-v1.5 768D title/abstract/field/topic/venue embeddings according to inherited metadata; L2 normalized again. Encoder not rerun or independently authenticated.",
+  "source_hashes": {
+    "vectors.npy": "921dce0ba8a8887a7deecf2fc05bf231c1dcddc46ec516b941189bfbda0538bd",
+    "labels.npy": "cf647261801c7b81d3507509fb980cf1933e25a1c52345d874e84796418ed260",
+    "graph_cache.npz": "0a7c86dd3690252e7decfcd29cb47a6eb6c2a40c1c9758441b23772a8f311d3e",
+    "metadata.json": "dcf77023006f4fb01c78b20574bc8cbcb3f05f1a3c1e875287c65952e8ccbfdf",
+    "openalex_fetch_metadata.json": "36d7ab745897782077ba2db9eb0edad411ba0de0efd6dd148712872d6ed119e2"
+  },
+  "output_sha256": "0a0a830600ce06bb047bf3fce08576bf4f9295c573be40d3507302af52e1b30a",
+  "limitation": "Source cache reused read-only; no old queries, methods, results used. Original API records and model version were not redownloaded in this run."
+}

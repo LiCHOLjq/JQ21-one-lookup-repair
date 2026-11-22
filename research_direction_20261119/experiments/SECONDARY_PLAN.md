@@ -1,0 +1,5 @@
+# Literature-driven comparisons
+
+Recorded before the root author viewed any experimental outcomes. Following a review of Malmi, Gionis and Terzi (2017), include their expected residual accuracy criterion (equation 5), computed with exact posterior pair marginals. It values individual rows. Score all policies with the same whole-permutation MAP decoder after the oracle response, even when their selection rule optimizes a different loss. Also evaluate least confidence and the strongest alternative constrained assignment (smallest forced runner-up gap). Average across numerically tied query actions for all supplementary policies. Report all outcomes, without adding another success criterion.
+
+Test the distribution-free bound that a uniform row captures at least 2/b of the best achievable expected gain under a permutation posterior with perfect one-row verification and whole-block 0-1 loss. This applies under the specified distribution, not necessarily to experimental frequencies under a misspecified model.

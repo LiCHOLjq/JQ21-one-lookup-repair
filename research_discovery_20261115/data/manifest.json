@@ -1,0 +1,176 @@
+[
+  {
+    "dataset": "cora",
+    "prepared_utc": "2026-11-15T04:15:40.519245+00:00",
+    "source_metadata": {
+      "dim": 1433,
+      "edges": {
+        "by_relation": {
+          "cited_by": 5429,
+          "cites": 5429
+        },
+        "skipped_citations": 0,
+        "total": 10858
+      },
+      "labels": {
+        "count": 7,
+        "counts": {
+          "Case_Based": 298,
+          "Genetic_Algorithms": 418,
+          "Neural_Networks": 818,
+          "Probabilistic_Methods": 426,
+          "Reinforcement_Learning": 217,
+          "Rule_Learning": 180,
+          "Theory": 351
+        },
+        "map": {
+          "Case_Based": 0,
+          "Genetic_Algorithms": 1,
+          "Neural_Networks": 2,
+          "Probabilistic_Methods": 3,
+          "Reinforcement_Learning": 4,
+          "Rule_Learning": 5,
+          "Theory": 6
+        }
+      },
+      "vertices": 2708
+    },
+    "source_files_sha256": {
+      "vectors.npy": "e7c5c8a8e0483e556a3676ab2379cf469804fb27fb6198cc91ab7e1058c76e1a",
+      "labels.npy": "352ddf3b21c08b263ac92007e745119cabc04544f7f47144b29f768f55877c5a",
+      "graph_cache.npz": "6f99162e58823f6671d5e209243919cf3724041b8d3c890fd16a5039f17b67c4",
+      "metadata.json": "26a08618a5a89c18a9594f37348f7ab651981284ae95e70e9e24d691ca3e1e1b"
+    },
+    "output_sha256": "5656f3726bddb86abd4f82cae57dac48d6dd11785e659f11ab03c4d5e8a81b94",
+    "n_nodes": 2708,
+    "n_edges": 10556,
+    "dimension": 64,
+    "preprocessing": "Cora: existing features + SVD64(random_state=0) + L2 normalization; OGBN-Arxiv: existing 128D features + L2 normalization",
+    "selection": "all nodes"
+  },
+  {
+    "dataset": "ogbn_arxiv_20k",
+    "prepared_utc": "2026-11-15T04:15:42.581209+00:00",
+    "source_metadata": {
+      "dim": 128,
+      "edges": {
+        "by_relation": {
+          "cited_by": 1166243,
+          "cites": 1166243
+        },
+        "total": 2332486
+      },
+      "labels": {
+        "count": 40,
+        "counts": {
+          "0": 565,
+          "1": 687,
+          "10": 7869,
+          "11": 750,
+          "12": 29,
+          "13": 2358,
+          "14": 597,
+          "15": 403,
+          "16": 27321,
+          "17": 515,
+          "18": 749,
+          "19": 2877,
+          "2": 4839,
+          "20": 2076,
+          "21": 393,
+          "22": 1903,
+          "23": 2834,
+          "24": 22187,
+          "25": 1257,
+          "26": 4605,
+          "27": 4801,
+          "28": 21406,
+          "29": 416,
+          "3": 2080,
+          "30": 11814,
+          "31": 2828,
+          "32": 411,
+          "33": 1271,
+          "34": 7867,
+          "35": 127,
+          "36": 3524,
+          "37": 2369,
+          "38": 1507,
+          "39": 2029,
+          "4": 5862,
+          "5": 4958,
+          "6": 1618,
+          "7": 589,
+          "8": 6232,
+          "9": 2820
+        },
+        "map": {
+          "0": "arxiv.cs na",
+          "1": "arxiv.cs mm",
+          "10": "arxiv.cs ai",
+          "11": "arxiv.cs ma",
+          "12": "arxiv.cs gl",
+          "13": "arxiv.cs ne",
+          "14": "arxiv.cs sc",
+          "15": "arxiv.cs ar",
+          "16": "arxiv.cs cv",
+          "17": "arxiv.cs gr",
+          "18": "arxiv.cs et",
+          "19": "arxiv.cs sy",
+          "2": "arxiv.cs lo",
+          "20": "arxiv.cs cg",
+          "21": "arxiv.cs oh",
+          "22": "arxiv.cs pl",
+          "23": "arxiv.cs se",
+          "24": "arxiv.cs lg",
+          "25": "arxiv.cs sd",
+          "26": "arxiv.cs si",
+          "27": "arxiv.cs ro",
+          "28": "arxiv.cs it",
+          "29": "arxiv.cs pf",
+          "3": "arxiv.cs cy",
+          "30": "arxiv.cs cl",
+          "31": "arxiv.cs ir",
+          "32": "arxiv.cs ms",
+          "33": "arxiv.cs fl",
+          "34": "arxiv.cs ds",
+          "35": "arxiv.cs os",
+          "36": "arxiv.cs gt",
+          "37": "arxiv.cs db",
+          "38": "arxiv.cs dl",
+          "39": "arxiv.cs dm",
+          "4": "arxiv.cs cr",
+          "5": "arxiv.cs dc",
+          "6": "arxiv.cs hc",
+          "7": "arxiv.cs ce",
+          "8": "arxiv.cs ni",
+          "9": "arxiv.cs cc"
+        }
+      },
+      "selection": {
+        "max_nodes": 0,
+        "max_original_id": 169342,
+        "min_original_id": 0,
+        "seed_count": 8,
+        "selected_nodes": 169343
+      },
+      "vertices": 169343,
+      "years": {
+        "max": 2020,
+        "min": 1971
+      }
+    },
+    "source_files_sha256": {
+      "vectors.npy": "56a0d730e6fe53819891c14ad303eaa1d700c183de2979d78c13ace633ed1c07",
+      "labels.npy": "21f1fae5699d872d21c0e1f5dcca3d92533393b544fa238b0049136275abd15c",
+      "graph_cache.npz": "eb6c9ef9c32194d6f2823139c4e674585f86a8a4a84de6d6723a24ac1b12fb39",
+      "metadata.json": "f11bed7912b845685346fde29dcfd72dba56424c23f20223780bc2edaeb9b84f"
+    },
+    "output_sha256": "cddc6135c1eb50f41bc857d30491886261f32cb418119039857ffc722c33ed26",
+    "n_nodes": 20000,
+    "n_edges": 435470,
+    "dimension": 128,
+    "preprocessing": "Cora: existing features + SVD64(random_state=0) + L2 normalization; OGBN-Arxiv: existing 128D features + L2 normalization",
+    "selection": "BFS induced 20000-node subset seeded by up to 3 nodes per class, RNG20261115"
+  }
+]
