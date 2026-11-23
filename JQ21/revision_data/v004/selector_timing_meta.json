@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3",
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "cpu": "Intel(R) Xeon(R) w9-3475X",
+  "finished": "2026-11-23T07:49:17.832252+00:00",
+  "sha256": "6866e8edc5faf8d0e5742a0602e9878aaca82410c5dc8b253a8603b3f37d2bda",
+  "computation": "Authorized experiment server, one numerical thread, seven alternating repeats per cell. Times are nanoseconds per block; each batch contains 16 blocks."
+}

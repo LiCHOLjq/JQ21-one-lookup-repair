@@ -1,0 +1,65 @@
+{
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "python": "3.12.3",
+  "elapsed_seconds": 5.1738544690006165,
+  "workers": 4,
+  "checks": [
+    {
+      "dataset": "cora",
+      "seed": 191126,
+      "none": 0,
+      "uniform": 0,
+      "value": 0
+    },
+    {
+      "dataset": "cora",
+      "seed": 201126,
+      "none": 0,
+      "uniform": 0,
+      "value": 0
+    },
+    {
+      "dataset": "ogbn_arxiv_20k",
+      "seed": 191126,
+      "none": 0,
+      "uniform": 0,
+      "value": 0
+    },
+    {
+      "dataset": "ogbn_arxiv_20k",
+      "seed": 201126,
+      "none": 0,
+      "uniform": 0,
+      "value": 0
+    },
+    {
+      "dataset": "openalex_20k",
+      "seed": 191126,
+      "none": 0,
+      "uniform": 0,
+      "value": 0
+    },
+    {
+      "dataset": "openalex_20k",
+      "seed": 201126,
+      "none": 0,
+      "uniform": 0,
+      "value": 0
+    },
+    {
+      "dataset": "amazon_computers",
+      "seed": 191126,
+      "none": 0,
+      "uniform": 0,
+      "value": 0
+    },
+    {
+      "dataset": "amazon_computers",
+      "seed": 201126,
+      "none": 0,
+      "uniform": 0,
+      "value": 0
+    }
+  ]
+}

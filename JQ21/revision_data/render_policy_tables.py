@@ -9,7 +9,7 @@ DATASETS = (
     ("cora", "Cora"),
     ("ogbn_arxiv_20k", r"\texttt{ogbn-arxiv}"),
     ("openalex_20k", "OpenAlex"),
-    ("amazon_computers", "Amazon"),
+    ("amazon_computers", r"\shortstack[l]{Amazon\\Computers}"),
 )
 POLICIES = (
     ("no_lookup", "No lookup"),
@@ -144,7 +144,7 @@ def policy_table(index, endpoint):
     for stage, size, seeds, convention in STAGES:
         lines += [r"\begin{table}[!ht]", r"\centering"]
         if size == 6:
-            lines.append(r"\caption{" + caption + r"}\label{tab:" + suffix + "-comparisons}")
+            lines.append(r"\caption{" + caption + r"}\suppmarker{tab:" + suffix + "-comparisons}")
         else:
             lines += [r"\ContinuedFloat", r"\caption{Twelve-row policy comparisons continued.}"]
         lines += [r"\small", r"\setlength{\tabcolsep}{5pt}",

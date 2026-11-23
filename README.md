@@ -1,6 +1,6 @@
 # One-lookup verification for graph–feature joins
 
-Research code and numerical data for *The Value of Choosing Which Record to Verify in Graph–Feature Joins*.
+Research code and numerical data for *A Sharp Verification Bound and a Cubic-Time Lookup Rule for Graph–Feature Joins*.
 
 Starting from a score matrix on a known block of vertices and a shuffled batch of corresponding feature records, each policy chooses one vertex to verify. The primary outcome is correct recovery of the entire bijection after its true slot is revealed.
 
@@ -11,15 +11,16 @@ Use Python 3.11 or later with NumPy, SciPy and Matplotlib. The requirements file
 ```sh
 python -m pip install -r requirements.txt
 python JQ21/plot_figures.py
+python JQ21/revision_data/v004/openalex_figure.py
 python JQ21/revision_data/render_policy_tables.py
 python JQ21/revision_data/six_entropy_holm.py
 ```
 
-The plotting script writes nine PDFs to `JQ21/figures/`. The table generator writes LaTeX tabular material to the JQ21 directory. The Holm test script reproduces the discordant counts and two-sided exact McNemar p-values for the eight six-row comparisons of whole-block value with exact entropy, with Holm adjustment across the eight cells. These commands use included numerical outcomes and work offline after installing dependencies.
+The two plotting scripts write ten PDFs to `JQ21/figures/`. The table generator writes LaTeX tabular material to the JQ21 directory. The Holm test script reproduces the discordant counts and two-sided exact McNemar p-values for the eight six-row comparisons of whole-block value with exact entropy, with Holm adjustment across the eight cells. These commands use included numerical outcomes and work offline after installing dependencies.
 
 ## Figure numbering in the Information Sciences manuscript
 
-The four main figures use the files named `setting`, `gain_bound`, `primary_gain`, and `exact_entropy_confirmation` in order. Supplementary Figures S1–S5 use `exchange_paths`, `regime_controls`, `block_sizes`, `size_calibration`, and `kernel_timing`. The table generator produces the two six-row tables in the journal layout and the full selector comparisons used as Supplementary Tables S1 and S2.
+The four main figures use the files named `setting`, `gain_bound`, `primary_gain`, and `exact_entropy_confirmation` in order. Supplementary Figures S1–S5 use `exchange_paths`, `regime_controls`, `block_sizes`, `size_calibration`, and `kernel_timing`. Supplementary Figure S6 uses `openalex_ablation`. The table generator produces the two six-row tables in the journal layout and the full selector comparisons used as Supplementary Tables S1 and S2.
 
 ## Repeat graph-level analyses
 
@@ -40,6 +41,25 @@ python JQ21/revision_data/twelve_policy_comparisons.py --kernel JQ21/revision_da
 ```
 
 On Windows, build the DLL with an x64 Visual Studio developer shell using the command in the Python driver's docstring. Rerunning an analysis updates its output files. Deterministic completion choices can differ across numerical libraries on tied scores. The archive comparison for the stress test is recorded in `JQ21/revision_data/block_stress/archive_replay_audit.json`.
+
+## Additional experiments in v004
+
+The v004 release adds the OpenAlex metadata ablation, adaptive two- and three-lookup six-row trials, 24- and 32-row exact and partial recovery checks, matched twelve-row selector timings, multiplicity-adjusted paired comparisons, and the comparator policies for the shuffled-context control.
+
+For OpenAlex, the public release includes filtered citations and shared-author edges, two re-encoded feature arrays, 12,000 scored block instances across three feature views, and per-block policy outcomes. Each graph/text combination uses the same 1,000 evaluation blocks per split. Use the [OpenAlex instructions](JQ21/revision_data/v004/openalex_README.md) to run the ablation from the included numeric inputs, or to rebuild the embeddings separately.
+
+From the repository root, after restoring the upstream inputs as described above, run:
+
+```sh
+R=JQ21/revision_data/v004
+python "$R/sequential.py" --workers 4
+python "$R/sequential_clean.py" --vectors "$R/openalex_title_abstract_vectors.npz"
+python "$R/selector_timing.py"
+python "$R/inference.py"
+python "$R/inference_tables.py"
+```
+
+The v004 experiment environment and original runtime records accompany the timing, sequential and embedding outputs. The point timings depend on the machine. The output CSVs and fitted score arrays record the reported measurements. Re-running the table generators also writes local LaTeX table fragments.
 
 ## Data and provenance
 
